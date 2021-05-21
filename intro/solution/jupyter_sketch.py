@@ -3,7 +3,6 @@
 
 # In[2]:
 
-
 f28l = []
 v0 = [0]*20;
 v0[0] = [26, 6, 125]
@@ -131,10 +130,3 @@ cipher = AES.new(hash1,1)
 text = cipher.decrypt(secret1)
 print(hash1.hex(), secret1.hex())
 print(text)
-
-
-# In[8]:
-
-
-
-
