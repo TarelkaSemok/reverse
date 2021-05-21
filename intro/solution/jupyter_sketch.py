@@ -126,7 +126,7 @@ secret = f28l[1] + f28l[3]
 secret1 = (secret + [122, 125, -19, 33, 69, 71, 112, -6, 36, 19, -90, 118])
 secret1 = bytearray([c&0xFF for c in secret1])
 
-cipher = AES.new(hash1,1)
+cipher = AES.new(hash1,AES.MODE_ECB)
 text = cipher.decrypt(secret1)
 print(hash1.hex(), secret1.hex())
 print(text)
