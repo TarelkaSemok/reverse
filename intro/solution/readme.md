@@ -27,4 +27,4 @@
 
 Вывод консоли Frida:
 
-![Frida console](https://github.com/TarelkaSemok/reverse/blob/patch-1/intro/solution/frida_con.png)
+![Frida console](/intro/solution/frida_con.png)
