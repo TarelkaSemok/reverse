@@ -24,7 +24,12 @@ Java.perform(function(){
 						    0x45, 0x47, 0x70, 0xfa, 0x24, 0x13, 0xa6, 0x76
 						    ]);
 		var my_text = this.iiiilll(my_key, my_cipher);
-		return Java.use("example.com.crackme.i$Status").KEY_GOOD.value;
+		if(s == Java.use("java.lang.String").$new(my_text)) {
+			return Java.use("example.com.crackme.i$Status").KEY_GOOD.value;
+		}
+		else {
+			return Java.use("example.com.crackme.i$Status").KEY_INVALID.value;
+		}
 	}
 		
 	Java.use("example.com.crackme.i").iiiilll.implementation = function (a1, a2) {
